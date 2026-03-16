@@ -199,7 +199,7 @@ import axios from "axios";
 import { X } from "lucide-react";
 import { toast } from "react-toastify";
 
-const API_BASE = "http://localhost:1005";
+const API_BASE = "https://sdt-7.onrender.com";
 
 export default function HotelFormModel({ close, refresh, editData }) {
   const [form, setForm] = useState(

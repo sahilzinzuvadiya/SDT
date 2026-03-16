@@ -21,7 +21,7 @@ import {
   Zap
 } from "lucide-react";
 
-const BASE_URL = "http://localhost:1005";
+const BASE_URL = "https://sdt-7.onrender.com";
 
 /* FEATURE ICON MAP */
 const featureIconMap = {

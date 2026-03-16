@@ -17,7 +17,7 @@ export default function PricecalenderModal({ hotel, close }) {
 
   const fetchMonthPrices = async () => {
     const res = await axios.get(
-      "http://localhost:1005/hotels/month-prices",
+      "https://sdt-7.onrender.com/hotels/month-prices",
       {
         params: {
           hotelId: hotel._id,
@@ -45,7 +45,7 @@ export default function PricecalenderModal({ hotel, close }) {
   };
 
   const savePrices = async () => {
-    await axios.post("http://localhost:1005/hotels/month-prices", {
+    await axios.post("https://sdt-7.onrender.com/hotels/month-prices", {
       hotelId: hotel._id,
       roomType,
       prices
