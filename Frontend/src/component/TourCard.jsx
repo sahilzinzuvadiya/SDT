@@ -105,7 +105,7 @@ transition-shadow
             {tour.images.map((img, i) => (
               <div key={i} className=" h-[240px] sm:h-[240px]">
                 <img
-                  src={`http://localhost:1005${img}`}
+                  src={`https://sdt-4.onrender.com${img}`}
                   alt={tour.title}
                   className="rounded-xl w-full h-full object-cover"
                 />

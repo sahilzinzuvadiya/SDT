@@ -10,7 +10,7 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "http://localhost:1005";
+const API_BASE = "https://sdt-4.onrender.com";
 
 /* ================= IMAGE SLIDER ================= */
 const ImageSlider = ({ images, name }) => {
