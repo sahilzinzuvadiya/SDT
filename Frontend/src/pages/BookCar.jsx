@@ -6,7 +6,7 @@ import { AlertCircle } from "lucide-react";
 import { toast } from "react-toastify";
 import CarCanceletion from "../component/CarCanceletion";
 
-const BASE_URL = "http://localhost:1005";
+const BASE_URL = "https://sdt-4.onrender.com";
 
 export default function BookCar() {
   const { id } = useParams();

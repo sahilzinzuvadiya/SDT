@@ -7,7 +7,7 @@ import TourCardSkeleton from "../component/TourCardSkeleton";
 const IndividualTour = () => {
   const [tours, setTours] = useState([]);
    const [loading, setLoading] = useState(true);
-   const BASE_URL = "http://localhost:1005";
+   const BASE_URL = "https://sdt-4.onrender.com";
 
   useEffect(() => {
   const fetchTours = async () => {

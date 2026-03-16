@@ -63,7 +63,7 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      await axios.post("http://localhost:1005/Contact/enquiry", formData);
+      await axios.post("https://sdt-4.onrender.com/Contact/enquiry", formData);
       toast.success("Thank you! We will contact you shortly.");
 
       // Reset form
