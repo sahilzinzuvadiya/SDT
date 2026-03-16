@@ -45,7 +45,7 @@ const AddGroupItinerary = ({ tourId }) => {
     });
 
     await axios.post(
-      "http://localhost:1005/group-tours/itinerary",
+      "https://sdt-4.onrender.com/group-tours/itinerary",
       formData
     );
 

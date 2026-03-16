@@ -108,7 +108,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
 
-const BASE_URL = "http://localhost:1005";
+const BASE_URL = "https://sdt-4.onrender.com";
 
 const formatDate = (date) => {
   const d = new Date(date);

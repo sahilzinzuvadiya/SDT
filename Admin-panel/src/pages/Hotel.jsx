@@ -14,7 +14,7 @@ export default function Hotel() {
   const [priceHotel, setPriceHotel] = useState(null); // 🔥 NEW
 
   const fetchHotels = async () => {
-    const res = await axios.get("http://localhost:1005/hotels");
+    const res = await axios.get("https://sdt-4.onrender.com/hotels");
     setHotels(res.data);
   };
 

@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import AddCarModal from "../components/AddCarModal";
 import AdminCarCard from "../components/AdminCarCard";
 
-const BASE_URL = "http://localhost:1005";
+const BASE_URL = "https://sdt-4.onrender.com";
 
 export default function AdminCar() {
   const [cars, setCars] = useState([]);
