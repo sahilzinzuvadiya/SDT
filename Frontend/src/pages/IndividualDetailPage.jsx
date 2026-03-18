@@ -36,6 +36,7 @@ const IndividualDetailPage = () => {
   /* ================= FETCH ITINERARY ================= */
   const fetchItinerary = async () => {
     try {
+      console.log("Fetching itinerary for ID:", id);
       const res = await axios.get(
         `${BASE_URL}/individual-tours/${id}/individualitinerary`
       );

@@ -32,17 +32,23 @@ const GroupTourDetail = () => {
     }
   };
 
-  const fetchItinerary = async () => {
-    try {
-      const res = await axios.get(
-        `${BASE_URL}/group-tours/${id}/itinerary`
-      );
-      setItinerary(Array.isArray(res.data) ? res.data : []);
-    } catch (err) {
-      console.error("Itinerary fetch error", err);
-      setItinerary([]);
-    }
-  };
+ const fetchItinerary = async () => {
+  try {
+    const res = await axios.get(
+      `${BASE_URL}/group-tours/${id}/itinerary`
+    );
+
+    console.log("ITINERARY DATA 👉", res.data);
+
+    // ✅ FIX HERE
+    const daysData = res.data?.itinerary || res.data;
+
+    setItinerary(Array.isArray(daysData) ? daysData : []);
+  } catch (err) {
+    console.error("Itinerary fetch error", err);
+    setItinerary([]);
+  }
+};
 
   const getDaysNights = (startDate, endDate) => {
     if (!startDate || !endDate) return "";
